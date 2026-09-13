@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Minecraft Rus';
+  src: url('./fonts/minecraft-rus.ttf') format('truetype');
+  font-display: swap;
+}
+
 /* Brand colours come from the VECTORPOINT wordmark: pink for VECTOR, orange for POINT. */
 :root {
   --vp-c-brand-1: #b8329f;
@@ -7,9 +13,23 @@
 
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(120deg, #b8329f 30%, #d9822e);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #ff73e5 50%, #ffb872 50%);
+  --vp-home-hero-image-filter: blur(44px);
 
-  /* The logo is a 17px pixel glyph; 34px is exactly 2x. */
-  --vp-nav-logo-height: 34px;
+  /* The beehive is 32px pixel art, so the nav shows it at exactly 1x. */
+  --vp-nav-logo-height: 32px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
 }
 
 .dark {
@@ -21,6 +41,56 @@
   --vp-home-hero-name-background: linear-gradient(120deg, #ff73e5 30%, #ffb872);
 }
 
-img.logo {
+/* Minecraft Rus is drawn on an 8px grid and blurs at any size that is not a multiple of 8. */
+.VPNavBar .VPNavBarTitle .title,
+.VPHome .VPHero .name {
+  font-family: 'Minecraft Rus', var(--vp-font-family-base);
+  font-weight: 400;
+  letter-spacing: 0;
+  -webkit-font-smoothing: none;
+}
+
+.VPNavBar .VPNavBarTitle .title {
+  font-size: 16px;
+}
+
+.VPHome .VPHero .name {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.VPHome .VPHero .image-src {
+  width: 192px;
+  height: 192px;
+  max-width: none;
+  max-height: none;
+}
+
+@media (min-width: 640px) {
+  .VPHome .VPHero .name {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .VPHome .VPHero .image-src {
+    width: 256px;
+    height: 256px;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPHome .VPHero .name {
+    font-size: 64px;
+    line-height: 72px;
+  }
+
+  .VPHome .VPHero .image-src {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+img.logo,
+.VPHero .image-src {
   image-rendering: pixelated;
 }
