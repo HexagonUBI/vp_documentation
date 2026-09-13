@@ -20,9 +20,17 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
-          # Full history, or every page's "last updated" date is the latest commit.
+          # VitePress takes each page's "last updated" time from git history.
           fetch-depth: 0
-      - uses: withastro/action@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: docs/.vitepress/dist
 
   deploy:
     needs: build

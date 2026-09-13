@@ -1,18 +1,14 @@
 {
-  "name": "wiki.simplefox.studio",
+  "name": "vp_documentation",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs --port 4321"
   },
-  "dependencies": {
-    "@astrojs/starlight": "^0.42.0",
-    "astro": "^7.2.10",
-    "sharp": "^0.35.3"
+  "devDependencies": {
+    "vitepress": "^1.6.4"
   },
   "allowScripts": {
     "esbuild": true

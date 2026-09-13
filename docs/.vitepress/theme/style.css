@@ -1,0 +1,26 @@
+/* Brand colours come from the VECTORPOINT wordmark: pink for VECTOR, orange for POINT. */
+:root {
+  --vp-c-brand-1: #b8329f;
+  --vp-c-brand-2: #cc45b2;
+  --vp-c-brand-3: #b8329f;
+  --vp-c-brand-soft: rgba(212, 96, 190, 0.14);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #b8329f 30%, #d9822e);
+
+  /* The logo is a 17px pixel glyph; 34px is exactly 2x. */
+  --vp-nav-logo-height: 34px;
+}
+
+.dark {
+  --vp-c-brand-1: #ff73e5;
+  --vp-c-brand-2: #ff96ec;
+  --vp-c-brand-3: #d460be;
+  --vp-c-brand-soft: rgba(255, 115, 229, 0.16);
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #ff73e5 30%, #ffb872);
+}
+
+img.logo {
+  image-rendering: pixelated;
+}
