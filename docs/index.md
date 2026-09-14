@@ -73,7 +73,7 @@ The coordinator service behind global chat and friends, a main menu, an interact
 
 ## Community
 
-- [Discord](https://discord.gg/mpH3RJBssw): the Hexagon Official community server. VectorPoint is whitelisted, and players ask for verification there before they can join.
+- [Discord](https://discord.gg/mpH3RJBssw): the Hexagon Official community server. VectorPoint is whitelisted, and players apply through the whitelist form there before they can join.
 - [Trello](https://trello.com/b/2Pxq0v1X/vector-point): what has been released and what is being worked on.
 - [Live map](https://maps.simplefox.studio): Pixel Maps running on VectorPoint.
 - [Ko-fi](https://ko-fi.com/simplefox): donations to VectorPoint.
