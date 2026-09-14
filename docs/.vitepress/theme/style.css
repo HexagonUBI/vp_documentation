@@ -13,7 +13,7 @@
 
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(120deg, #b8329f 30%, #d9822e);
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #ff73e5 50%, #ffb872 50%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #ff73e5 15%, #ffb872 15%);
   --vp-home-hero-image-filter: blur(44px);
 
   /* The beehive is 32px pixel art, so the nav shows it at exactly 1x. */
