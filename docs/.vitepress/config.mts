@@ -25,13 +25,13 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: siteTitle }],
     ['meta', { property: 'og:locale', content: 'en_US' }],
-    ['meta', { property: 'og:image', content: `${site}/og-banner.png` }],
+    ['meta', { property: 'og:image', content: `${site}/og-wide.png` }],
     ['meta', { property: 'og:image:type', content: 'image/png' }],
-    ['meta', { property: 'og:image:width', content: '1200' }],
-    ['meta', { property: 'og:image:height', content: '630' }],
+    ['meta', { property: 'og:image:width', content: '1600' }],
+    ['meta', { property: 'og:image:height', content: '700' }],
     ['meta', { property: 'og:image:alt', content: 'The Ecosystem: documentation for the mods behind the Vector Point server' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:image', content: `${site}/og-banner.png` }],
+    ['meta', { name: 'twitter:image', content: `${site}/og-wide.png` }],
   ],
   transformHead({ pageData }) {
     if (pageData.isNotFound) return
